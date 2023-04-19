@@ -18,10 +18,36 @@ functions:
   udafs: {}
   expressions: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/test_model:
+    name: test_model
+    description: null
+    author: kishore@simpledatalabs.com
+    files:
+    - models/test_model.sql
+    - .prophecy/ide/models/test_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-04-19 17:39:13'
+    modifiedAt: '2023-04-19 17:39:13'
 sqlMacros: {}
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/spark_catalog_kunalg:
+    name: spark_catalog.kunalg
+    description: null
+    author: kishore@simpledatalabs.com
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-04-19 17:39:35'
+    modifiedAt: '2023-04-19 17:39:35'
+    tables:
+    - name: stg_customers
+      description: null
+      author: kishore@simpledatalabs.com
+      createdAt: '2023-04-19 17:39:35'
+      modifiedAt: '2023-04-19 17:39:35'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline

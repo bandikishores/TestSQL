@@ -1,0 +1,20 @@
+---
+version: 2
+sources:
+- name: "spark_catalog.kunalg"
+  database: "spark_catalog"
+  schema: "kunalg"
+  config:
+    enabled: true
+  tables:
+  - name: "stg_customers"
+    columns:
+    - name: "customer_id"
+      dataType:
+        type: "Bigint"
+    - name: "first_name"
+      dataType:
+        type: "String"
+    - name: "last_name"
+      dataType:
+        type: "String"
